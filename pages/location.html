@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/location.css">
+    <link rel="stylesheet" href="../styles/nav.css">
+</head>
+
+<body>
+
+    <!--section-->
+    <header class="header">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+                <a href="../index.html" class="logo">
+
+                    <i class="fas fa-location-dot"></i>
+
+                    <span>Campus Navigation</span>
+
+                </a>
+
+                <ul class="nav-menu">
+
+                    <li><a href="../index.html">Home</a></li>
+
+                    <li><a href="./about.html">About</a></li>
+
+                    <li><a href="./location.html" class="active">Locations</a></li>
+
+                    <li><a href="./route.html">Routes</a></li>
+
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+
+                <div class="nav-right">
+
+                    <button id="themeToggle">
+
+                        <i class="fas fa-moon"></i>
+
+                    </button>
+
+                    <a href="../pages/dasboard.html" class="dashboard-btn">
+
+                        Dashboard
+
+                    </a>
+
+                    <button class="hamburger">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </button>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- hero -->
+    <section class="page-hero">
+
+        <div class="container">
+
+            <h1>Campus Locations</h1>
+
+            <p>
+
+                Find lecture halls, hostels,
+                administrative offices and
+                important facilities around CATUC Bamenda.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- location  -->
+    <section class="location-page">
+
+        <div class="container">
+
+            <div class="search-area">
+
+                <input type="text" id="searchLocation" placeholder="Search campus location...">
+
+                <select id="category">
+
+                    <option value="all">
+
+                        All Categories
+
+                    </option>
+
+                    <option value="academic">
+
+                        Academic
+
+                    </option>
+
+                    <option value="hostel">
+
+                        Hostels
+
+                    </option>
+
+                    <option value="office">
+
+                        Administration
+
+                    </option>
+
+                    <option value="service">
+
+                        Services
+
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="location-layout">
+
+                <div id="map"></div>
+
+                <div class="location-list">
+
+                    <h2>
+
+                        Campus Buildings
+
+                    </h2>
+
+                    <div id="buildingContainer">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--footer-->
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div>
+
+                    <h3>Campus Navigation</h3>
+
+                    <p>
+
+                        Helping students and visitors navigate
+                        CATUC Bamenda quickly and efficiently.
+
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h3>Quick Links</h3>
+
+                    <a href="index.html">Home</a>
+
+                    <a href="about.html">About</a>
+
+                    <a href="location.html">Locations</a>
+
+                    <a href="route.html">Routes</a>
+
+                </div>
+
+                <div>
+
+                    <h3>Support</h3>
+
+                    <a href="#">Help Centre</a>
+
+                    <a href="#">FAQs</a>
+
+                    <a href="#">Privacy Policy</a>
+
+                    <a href="#">Terms</a>
+
+                </div>
+
+                <div>
+
+                    <h3>Contact</h3>
+
+                    <p>CATUC Bamenda</p>
+
+                    <p>Big Mankon</p>
+
+                    <p>Cameroon</p>
+
+                    <p>info@catuc.org</p>
+
+                </div>
+
+            </div>
+
+            <div class="copyright">
+
+                © 2026 Campus Navigation | CATUC Bamenda
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../scripts/location.js"></script>
+
+</body>
+
+</html>

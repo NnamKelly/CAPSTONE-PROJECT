@@ -1,0 +1,143 @@
+.route-page {
+
+    padding: 80px 0;
+
+}
+
+.route-grid {
+
+    display: grid;
+
+    grid-template-columns: 380px 1fr;
+
+    gap: 35px;
+
+}
+
+.route-panel {
+
+    background: var(--light);
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+
+    transition: .4s;
+
+}
+
+.route-panel:hover {
+
+    transform: translateY(-6px);
+
+}
+
+.form-group {
+
+    margin-bottom: 25px;
+
+}
+
+.form-group label {
+
+    display: block;
+
+    font-weight: 600;
+
+    margin-bottom: 10px;
+
+}
+
+.form-group select {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    border: 1px solid #ddd;
+
+}
+
+.route-actions {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin: 25px 0;
+
+}
+
+.route-actions button {
+
+    flex: 1;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: var(--primary);
+
+    color: var(--light);
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.route-actions button:hover {
+
+    background: var(--secondary);
+
+    transform: translateY(-4px);
+
+}
+
+.route-result {
+
+    background: var(--background);
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    margin-top: 20px;
+
+}
+
+#routeMap {
+
+    height: 650px;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+
+}
+
+@media(max-width:900px) {
+
+    .route-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    #routeMap {
+
+        height: 450px;
+
+    }
+
+}

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" href="../styles/nav.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+                <a href="../index.html" class="logo">
+
+                    <i class="fas fa-location-dot"></i>
+
+                    <span>Campus Navigation</span>
+
+                </a>
+
+                <ul class="nav-menu">
+
+                    <li><a href="../index.html">Home</a></li>
+
+                    <li><a href="./about.html">About</a></li>
+
+                    <li><a href="./location.html" class="active">Locations</a></li>
+
+                    <li><a href="./route.html">Routes</a></li>
+
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+
+                <div class="nav-right">
+
+                    <button id="themeToggle">
+
+                        <i class="fas fa-moon"></i>
+
+                    </button>
+
+                    <a href="../pages/dasboard.html" class="dashboard-btn">
+
+                        Dashboard
+
+                    </a>
+
+                    <button class="hamburger">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </button>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- dashboard -->
+    <section class="dashboard">
+
+        <div class="container dashboard-layout">
+
+            <!-- Sidebar -->
+
+            <aside class="sidebar reveal">
+
+                <h2>
+
+                    <i class="fas fa-map-location-dot"></i>
+
+                    Campus Navigation
+
+                </h2>
+
+                <ul>
+
+                    <li class="active">
+                        <i class="fas fa-chart-line"></i>
+                        Dashboard
+                    </li>
+
+                    <li>
+                        <i class="fas fa-building"></i>
+                        Manage Locations
+                    </li>
+
+                    <li>
+                        <i class="fas fa-route"></i>
+                        Manage Routes
+                    </li>
+
+                    <li>
+                        <i class="fas fa-users"></i>
+                        Visitors
+                    </li>
+
+                    <li>
+                        <i class="fas fa-gear"></i>
+                        Settings
+                    </li>
+
+                </ul>
+
+            </aside>
+
+            <!-- Main -->
+
+            <main class="dashboard-main">
+
+                <!-- Statistics -->
+
+                <div class="stats-grid">
+
+                    <div class="stat-card reveal">
+
+                        <i class="fas fa-building"></i>
+
+                        <h2 id="locationCount">0</h2>
+
+                        <p>Locations</p>
+
+                    </div>
+
+                    <div class="stat-card reveal">
+
+                        <i class="fas fa-route"></i>
+
+                        <h2 id="routeCount">0</h2>
+
+                        <p>Routes</p>
+
+                    </div>
+
+                    <div class="stat-card reveal">
+
+                        <i class="fas fa-users"></i>
+
+                        <h2>500+</h2>
+
+                        <p>Visitors</p>
+
+                    </div>
+
+                    <div class="stat-card reveal">
+
+                        <i class="fas fa-map"></i>
+
+                        <h2>100%</h2>
+
+                        <p>Coverage</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Add Location -->
+
+                <div class="admin-card reveal">
+
+                    <h2>Add New Location</h2>
+
+                    <form id="locationForm">
+
+                        <input type="text" id="locationName" placeholder="Location Name" required>
+
+                        <select id="category">
+
+                            <option>Academic</option>
+
+                            <option>Administration</option>
+
+                            <option>Hostel</option>
+
+                            <option>Service</option>
+
+                        </select>
+
+                        <textarea id="description" placeholder="Description" required>
+
+</textarea>
+
+                        <button class="btn">
+
+                            Save Location
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+                <!-- Table -->
+
+                <div class="admin-card reveal">
+
+                    <h2>Campus Locations</h2>
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Name</th>
+
+                                <th>Category</th>
+
+                                <th>Action</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="locationTable">
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </section>
+
+    <!--footer-->
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div>
+
+                    <h3>Campus Navigation</h3>
+
+                    <p>
+
+                        Helping students and visitors navigate
+                        CATUC Bamenda quickly and efficiently.
+
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h3>Quick Links</h3>
+
+                    <a href="index.html">Home</a>
+
+                    <a href="about.html">About</a>
+
+                    <a href="location.html">Locations</a>
+
+                    <a href="route.html">Routes</a>
+
+                </div>
+
+                <div>
+
+                    <h3>Support</h3>
+
+                    <a href="#">Help Centre</a>
+
+                    <a href="#">FAQs</a>
+
+                    <a href="#">Privacy Policy</a>
+
+                    <a href="#">Terms</a>
+
+                </div>
+
+                <div>
+
+                    <h3>Contact</h3>
+
+                    <p>CATUC Bamenda</p>
+
+                    <p>Big Mankon</p>
+
+                    <p>Cameroon</p>
+
+                    <p>info@catuc.org</p>
+
+                </div>
+
+            </div>
+
+            <div class="copyright">
+
+                © 2026 Campus Navigation | CATUC Bamenda
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="js/dashboard.js"></script>
+
+
+
+</body>
+
+</html>
