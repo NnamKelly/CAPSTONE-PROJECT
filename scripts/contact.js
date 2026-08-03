@@ -21,7 +21,7 @@ document.querySelectorAll(".faq-question").forEach((button) => {
 // Leaflet Map
 const contactMap = L.map("contactMap").setView([5.9246, 10.1074], 17);
 
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+L.tileLayer("", {
   attribution: "© OpenStreetMap",
 }).addTo(contactMap);
 
