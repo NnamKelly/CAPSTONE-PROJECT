@@ -2,6 +2,10 @@
     padding: 80px 0;
 }
 
+h1 {
+    margin-top: 40px;
+}
+
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
