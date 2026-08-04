@@ -81,6 +81,11 @@
     margin: 5px 0;
 }
 
+.navbar a.active {
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+}
+
 
 
 /* FOOTER */
