@@ -1,25 +1,25 @@
-const map = L.map("routeMap").setView([5.9246, 10.1074], 17);
+const map = L.map("routeMap").setView(, 17);
 
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+L.tileLayer("", {
   attribution: "© OpenStreetMap",
 }).addTo(map);
 
 const places = {
-  "Main Gate": [5.9246, 10.1074],
+  "Main Gate": [],
 
-  "Administration Block": [5.9251, 10.1081],
+  "Administration Block": [],
 
-  Library: [5.9249, 10.1088],
+  Library: [],
 
-  "Engineering Block": [5.9242, 10.1079],
+  "Engineering Block": [],
 
-  "Computer Laboratory": [5.924, 10.1085],
+  "Computer Laboratory": [],
 
-  "Male Hostel": [5.9238, 10.107],
+  "Male Hostel": [],
 
-  "Female Hostel": [5.9234, 10.1082],
+  "Female Hostel": [],
 
-  Cafeteria: [5.9245, 10.1089],
+  Cafeteria: [],
 };
 
 let polyline;

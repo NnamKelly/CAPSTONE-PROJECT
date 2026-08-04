@@ -1,165 +1,102 @@
 .dashboard {
-
     padding: 150px 0 80px;
-
 }
 
 .dashboard-layout {
-
     display: grid;
-
     grid-template-columns: 280px 1fr;
-
     gap: 35px;
-
 }
 
 .sidebar {
-
     background: #0A4FA3;
-
     color: var(--light);
-
     padding: 30px;
-
     border-radius: 18px;
-
     height: fit-content;
-
     position: sticky;
-
     top: 110px;
-
 }
 
 .sidebar h2 {
-
     margin-bottom: 35px;
-
 }
 
 .sidebar ul {
-
     list-style: none;
-
 }
 
 .sidebar li {
-
     padding: 16px;
-
     margin-bottom: 10px;
-
     border-radius: 10px;
-
     cursor: pointer;
-
     transition: .3s;
-
 }
 
 .sidebar li:hover,
 .sidebar li.active {
-
     background: rgba(255, 255, 255, .18);
-
 }
 
 .stats-grid {
-
     display: grid;
-
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-
     gap: 20px;
-
     margin-bottom: 35px;
 
 }
 
 .admin-card {
-
     background: var(--light);
-
     padding: 30px;
-
     border-radius: 18px;
-
     box-shadow: 0 10px 25px var(--shadow);
-
     margin-bottom: 35px;
-
 }
 
 .admin-card form {
-
     display: grid;
-
     gap: 20px;
-
 }
 
 .admin-card input,
 .admin-card textarea,
 .admin-card select {
-
     padding: 15px;
-
     border: 1px solid #ddd;
-
     border-radius: 10px;
-
 }
 
 table {
-
     width: 100%;
-
     border-collapse: collapse;
-
 }
 
 table th,
 table td {
-
     padding: 15px;
-
     text-align: left;
-
     border-bottom: 1px solid #eee;
-
 }
 
 .delete {
-
     background: #dc3545;
-
     color: var(--light);
-
     border: none;
-
     padding: 8px 15px;
-
     border-radius: 6px;
-
     cursor: pointer;
-
 }
 
 @media(max-width:900px) {
-
     .dashboard-layout {
-
         grid-template-columns: 1fr;
-
     }
 
     .sidebar {
-
         position: relative;
-
         top: 0;
-
     }
 
 }
