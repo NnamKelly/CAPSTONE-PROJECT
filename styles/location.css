@@ -77,6 +77,8 @@
 
 }
 
+
+
 @media(max-width:900px) {
     .search-area {
         grid-template-columns: 1fr;
